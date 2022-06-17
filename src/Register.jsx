@@ -26,12 +26,16 @@ function Register() {
           <input
             type="text"
             className="form-control"
-            placeholder="First name"
+            placeholder="First name + Middle Name"
           />
         </div>
         <div className="mb-3">
           <label>Last name</label>
           <input type="text" className="form-control" placeholder="Last name" />
+        </div>
+        <div className="mb-3">
+          <label>User name</label>
+          <input type="text" className="form-control" placeholder="Enter Username" />
         </div>
         <div className="mb-3">
           <label>Email address</label>
@@ -40,6 +44,29 @@ function Register() {
             className="form-control"
             placeholder="Enter email"
           />
+        </div>
+        <div className="mb-3">
+          <label>Age</label>
+          <input
+            type="number"
+            className="form-control"
+            placeholder="Enter your Age"
+          />
+        </div>
+        <div className="mb-3">
+          <label>Gender</label>&nbsp;&nbsp;&nbsp;
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioGender" id="radioMale" checked />
+              <label class="form-check-label" for="radioMale">
+                Male
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioGender" id="radioFemale" />
+              <label class="form-check-label" for="radioFemale">
+                Female
+              </label>
+            </div>
         </div>
         <div className="mb-3">
           <label>Password</label>
@@ -57,29 +84,6 @@ function Register() {
             placeholder="Re-Enter password"
           />
         </div>
-        <div className="mb-3">
-          <label>Age</label>
-          <input
-            type="number"
-            className="form-control"
-            placeholder="Enter your Age"
-          />
-        </div>
-        <div className="mb-3">
-          <label>Gender</label>
-            <div class="form-check mt-2">
-              <input class="form-check-input" type="radio" name="radioGender" id="radioMale" checked />
-              <label class="form-check-label" for="radioMale">
-                Male
-              </label>
-            </div>
-            <div class="form-check mb-2">
-              <input class="form-check-input" type="radio" name="radioGender" id="radioFemale" />
-              <label class="form-check-label" for="radioFemale">
-                Female
-              </label>
-            </div>
-        </div>
         <div className="d-grid">
           <button type="submit" className="btn btn-primary">
             Sign Up
@@ -94,4 +98,4 @@ function Register() {
     )
   }
 
-  export default Register
+  export default Register;

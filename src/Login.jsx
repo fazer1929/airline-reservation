@@ -27,20 +27,20 @@ function Login() {
       <form style={formStyle}>
         <h3>Sign In</h3>
 
-        <div class="form-check mt-2">
+        <div class="form-check form-check-inline">
           <input class="form-check-input" onClick={() => toogleAdmin()} type="radio" name="radioUserAdmin" id="radioUser" checked />
           <label class="form-check-label" for="radioAdmin">
             User
           </label>
         </div>
-        <div class="form-check mb-2">
+        <div class="form-check form-check-inline">
           <input ref={radioRef} onClick={() => toogleAdmin()} class="form-check-input" type="radio" name="radioUserAdmin" id="radioAdmin" />
           <label class="form-check-label" for="radioAdmin">
             Admin
           </label>
         </div>
 
-        <div className="mb-3">
+        <div className="mb-3 mt-3">
           <label>User Name</label>
           <input
             type="text"
