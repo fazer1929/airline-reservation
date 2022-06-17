@@ -24,7 +24,7 @@ function AdminDashboard() {
                 </div>
                 <div className='right'>
                     <h4 className='mb-5' >Date: <span style={specialText}>{new Date().toDateString().slice(4)}</span></h4>
-                    <h4>Time: <span style={specialText}>{new Date().toLocaleTimeString().slice(0, 5)} {new Date().toLocaleTimeString().slice(8)}</span></h4>
+                    <h4>Time: <span style={specialText}>{new Date().getHours()}:{new Date().getMinutes()} {new Date().toLocaleTimeString().slice(-3)}</span></h4>
                 </div>
             </div>
         </div>
