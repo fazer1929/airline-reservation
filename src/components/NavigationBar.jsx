@@ -8,9 +8,8 @@ function NavigationBar() {
                 <Container>
                     <Navbar.Brand href="/">Airline Reservation</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="/admin" > Add Airline</Nav.Link>
-                        <Nav.Link href="#features" >See Flights</Nav.Link>
-                        <Nav.Link href="#pricing" >Airline Ticket</Nav.Link>
+                        <Nav.Link href="/admin/add-flight" > Add Flight</Nav.Link>
+                        <Nav.Link href="/admin/see-flights" >See Flights</Nav.Link>
                         <Nav.Link href="#pricing" className='text-danger'>Logout</Nav.Link>
                     </Nav>
                 </Container>
