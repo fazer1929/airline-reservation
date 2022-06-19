@@ -1,4 +1,5 @@
 import React from "react";
+import AirplanesPlus from "../images/AirplanesPlus.png";
 
 function AboutUs(){
     return(
@@ -8,15 +9,17 @@ function AboutUs(){
   <div class="container py-5">
     <div class="row h-100 align-items-center py-5">
       <div class="col-lg-6">
-        <h1 class="display-4">Airline Reservation System</h1>
-        <p class="lead text-muted mb-0">A webpage for the Airline to book, view and cancel tickets easily.</p>
+        <h1 class="display-3">Airline Reservation System</h1>
+        <p class="lead text-muted mb-0">This system is built for user to directly access the system online to book tickets. The user can book, print, cancel tickets.</p>
+        <p class="lead text-muted mb-0">The administrator has control over the adding flights available for booking and has control over removing flights that are not necessary.</p>
+        <p class="lead text-muted mb-0">The administrator and user can both enter the system using their respective login details.</p>
       </div>
-      <div class="col-lg-6 d-none d-lg-block"><img src="https://bootstrapious.com/i/snippets/sn-about/illus.png" alt="" class="img-fluid"/></div>
+      <div class="col-lg-6 d-none d-lg-block"><img src={AirplanesPlus} alt="" class="img-fluid"/></div>
     </div>
   </div>
 </div>
 
-<div class="bg-white py-5">
+{/* <div class="bg-white py-5">
   <div class="container py-5">
     <div class="row align-items-center mb-5">
       <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
@@ -33,7 +36,7 @@ function AboutUs(){
       </div>
     </div>
   </div>
-</div>
+</div> */}
 
 <div class="bg-light py-1">
   <div class="container py-1">

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function UserDashboard() {
+function AdminDashboard() {
     const innerContainerStyle = {
 
         'display': 'flex',
@@ -20,7 +20,7 @@ function UserDashboard() {
         <div className='container'>
             <div className='inner-container' style={innerContainerStyle}>
                 <div className='left'>
-                    <h1 style={{ 'fontSize': "5rem", 'letterSpacing': "6px" }}>User</h1>
+                    <h1 style={{ 'fontSize': "5rem", 'letterSpacing': "6px" }}>Admin</h1>
                 </div>
                 <div className='right'>
                     <h4 className='mb-5' >Date: <span style={specialText}>{new Date().toDateString().slice(4)}</span></h4>
@@ -31,4 +31,4 @@ function UserDashboard() {
     )
 }
 
-export default UserDashboard
+export default AdminDashboard
