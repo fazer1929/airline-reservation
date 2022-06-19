@@ -8,6 +8,8 @@ import Register from './pages/Register';
 import UserDashboard from './pages/UserDashboard';
 import AdminDashboard from './pages/AdminDashboard';
 import NavigationBar from './components/NavigationBar';
+import Reservation from './pages/Reservation';
+import SearchFlight from './pages/SearchFlight';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route exact path="/signup" element={<Register />} />
         <Route exact path="/admin" element={<AdminDashboard />} />
         <Route exact path="/user" element={<UserDashboard />} />
+        <Route exact path="/reservation" element={<Reservation />} />
+        <Route exact path="/searchflight" element={<SearchFlight/>} />
         <Route exact path="" element={<Login />} />
       </Routes>
     </Router>
