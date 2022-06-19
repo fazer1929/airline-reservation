@@ -1,7 +1,7 @@
 import React from "react";
 import AirplanesPlus from "../images/AirplanesPlus.png";
 
-function AboutUs(){
+function About(){
     return(
         <div>
         
@@ -18,6 +18,8 @@ function AboutUs(){
     </div>
   </div>
 </div>
+
+{/* the commented code below will help in adding new content in the about page */}
 
 {/* <div class="bg-white py-5">
   <div class="container py-5">
@@ -38,12 +40,12 @@ function AboutUs(){
   </div>
 </div> */}
 
-<div class="bg-light py-1">
+<div class="bg-light py-8">
   <div class="container py-1">
     <div class="row mb-4">
       <div class="col-lg-5">
         <h2 class="display-4 font-weight-light">Our team</h2>
-        <p class="font-italic text-muted">Meet our Team Members</p>
+        <p class="font-italic text-muted">Meet our team members</p>
       </div>
     </div>
 
@@ -96,4 +98,4 @@ function AboutUs(){
     )
 }
 
-export default AboutUs;
+export default About;
