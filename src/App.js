@@ -9,6 +9,7 @@ import UserDashboard from './pages/UserDashboard';
 import AdminDashboard from './pages/AdminDashboard';
 import NavigationBar from './components/NavigationBar';
 import AddFlight from './pages/AddFlight';
+import SeeFlights from './pages/SeeFlights';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/user" element={<UserDashboard />} />
           <Route exact path="" element={<Login />} />
           <Route exact path='/admin/add-flight' element={<AddFlight />} />
+          <Route exact path='/admin/see-flights' element={<SeeFlights />} />
         </Routes>
       </UserContextProvider>
     </Router>
