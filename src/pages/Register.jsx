@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Register() {
 
   const formStyle = {
-    "width": "80%",
+    "width": "60%",
     "background": "#fff",
     "padding": "30px",
     "border-radius": "10px",
@@ -12,12 +12,12 @@ function Register() {
     "paddingBottom": "20px"
   }
   const containerStyle = {
-    "margin":"auto 20px"
+    "margin": "auto 20px"
   }
-    return (
+  return (
 
-      <div style={containerStyle}>
-              <h1 style={{ "color": "#f1f2f6", "marginBottom": "40px", "fontSize": "2.5rem", "letterSpacing": '1.2', 'textAlign':'center', 'paddingTop': "20px" }}>Welcome to Airline Reservation System</h1>
+    <div style={containerStyle}>
+      <h1 style={{ "color": "#f1f2f6", "marginBottom": "40px", "fontSize": "2.5rem", "letterSpacing": '1.2', 'textAlign': 'center', 'paddingTop': "20px" }}>Welcome to Airline Reservation System</h1>
 
       <form style={formStyle}>
         <h3>Sign Up</h3>
@@ -55,18 +55,18 @@ function Register() {
         </div>
         <div className="mb-3">
           <label>Gender</label>&nbsp;&nbsp;&nbsp;
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radioGender" id="radioMale" checked />
-              <label class="form-check-label" for="radioMale">
-                Male
-              </label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="radioGender" id="radioFemale" />
-              <label class="form-check-label" for="radioFemale">
-                Female
-              </label>
-            </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioGender" id="radioMale" checked />
+            <label class="form-check-label" for="radioMale">
+              Male
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioGender" id="radioFemale" />
+            <label class="form-check-label" for="radioFemale">
+              Female
+            </label>
+          </div>
         </div>
         <div className="mb-3">
           <label>Password</label>
@@ -94,8 +94,8 @@ function Register() {
           {/* Already registered <a href="/sign-in">sign in?</a> */}
         </p>
       </form>
-      </div>
-    )
-  }
+    </div>
+  )
+}
 
-  export default Register;
+export default Register;
