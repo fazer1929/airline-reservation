@@ -10,6 +10,8 @@ import AdminDashboard from './pages/AdminDashboard';
 import NavigationBar from './components/NavigationBar';
 import AddFlight from './pages/AddFlight';
 import SeeFlights from './pages/SeeFlights';
+import TicketStatus from './pages/TicketStatus';
+import CancelTicket from './pages/CancelTicket';
 
 function App() {
   return (
@@ -23,6 +25,9 @@ function App() {
           <Route exact path="" element={<Login />} />
           <Route exact path='/admin/add-flight' element={<AddFlight />} />
           <Route exact path='/admin/see-flights' element={<SeeFlights />} />
+          <Route exact path='/ticket-status' element={<TicketStatus />} />
+          <Route exact path='/user/cancel-ticket' element={<CancelTicket />} />
+
         </Routes>
       </UserContextProvider>
     </Router>

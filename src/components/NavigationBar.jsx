@@ -10,6 +10,7 @@ function NavigationBar() {
                     <Nav className="me-auto">
                         <Nav.Link href="/admin/add-flight" > Add Flight</Nav.Link>
                         <Nav.Link href="/admin/see-flights" >See Flights</Nav.Link>
+                        <Nav.Link href="/ticket-status" >Ticket Status</Nav.Link>
                         <Nav.Link href="#pricing" className='text-danger'>Logout</Nav.Link>
                     </Nav>
                 </Container>
@@ -26,6 +27,7 @@ function NavigationBar() {
                         <Nav.Link href="/admin" > Search Flights</Nav.Link>
                         <Nav.Link href="#features" >Airline Ticket</Nav.Link>
                         <Nav.Link href="#pricing" >Ticket Status</Nav.Link>
+                        <Nav.Link href="/ticket-status" >Ticket Status</Nav.Link>
                         <Nav.Link href="#pricing" className='text-white'>About Us</Nav.Link>
                         <Nav.Link href="#pricing" className='text-danger'>Logout</Nav.Link>
                     </Nav>
