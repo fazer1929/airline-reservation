@@ -17,7 +17,6 @@ import SeeFlights from './pages/SeeFlights';
 function App() {
   return (
     <Router>
-      <NavigationBar />
 
       <UserContextProvider>
         <NavigationBar />
