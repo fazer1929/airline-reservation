@@ -18,6 +18,8 @@ function Reservation() {
 
       <div style={containerStyle}>
               <h1 style={{ "color": "#f1f2f6", "marginBottom": "40px", "fontSize": "2.5rem", "letterSpacing": '1.2', 'textAlign':'center', 'paddingTop': "20px" }}>Book Ticket</h1>
+              <div class="row">
+              <div class="col-sm-6">
 
       <form style={formStyle}>
         <h3>Flight Details</h3>
@@ -99,12 +101,72 @@ function Reservation() {
         
         <div className="d-grid">
           <button type="submit" className="btn btn-primary">
-            Submit
+            Confirm
           </button>
         </div>
 
       </form>
       </div>
+      <div class="col-sm-6">
+
+<form style={formStyle}>
+  <h3>Passenger Details</h3>
+   <div className="mb-3">
+          <label>First name</label>
+          <input
+            type="text"
+            className="form-control"
+            placeholder="First name + Middle Name"
+          />
+        </div>
+        <div className="mb-3">
+          <label>Last name</label>
+          <input type="text" className="form-control" placeholder="Last name" />
+        </div>
+  
+        <div className="mb-3">
+          <label>Email address</label>
+          <input
+            type="email"
+            className="form-control"
+            placeholder="Enter email"
+          />
+        </div>
+        <div className="mb-3">
+          <label>Age</label>
+          <input
+            type="number"
+            className="form-control"
+            placeholder="Enter your Age"
+          />
+        </div>
+        <div className="mb-3">
+          <label>Gender</label>&nbsp;&nbsp;&nbsp;
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioGender" id="radioMale" checked />
+            <label class="form-check-label" for="radioMale">
+              Male
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioGender" id="radioFemale" />
+            <label class="form-check-label" for="radioFemale">
+              Female
+            </label>
+          </div>
+        </div>
+       
+        <div className="d-grid">
+          <button type="submit" className="btn btn-primary">
+            Submit
+          </button>
+  </div>
+
+</form>
+</div>
+</div>
+</div>
+
     )
   }
 

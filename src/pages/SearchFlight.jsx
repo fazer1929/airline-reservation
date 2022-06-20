@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import flight1 from "../images/flight1.png"
 import flight2 from "../images/flight2.png"
@@ -8,6 +9,14 @@ import flight5 from "../images/flight5.png"
 import flight6 from "../images/flight6.png"
 
 function SearchFlight() {
+
+  const [source,setSource] = useState("");
+  const [destination,setDestination] = useState("");
+  const [date,setDate] = useState("");
+  const [classType,setClassType] = useState("");
+
+
+
 
   const formStyle = {
     "width": "80%",
@@ -40,7 +49,7 @@ function SearchFlight() {
 
         <div class="form-group col-md-4">
       <label for="inputState">Source</label>
-      <select id="inputState" class="form-control">
+      <select id="inputState" class="form-control" >
         <option selected>Raipur</option>
         <option>Bilaspur</option>
         <option>Mumbai</option>
@@ -101,133 +110,114 @@ function SearchFlight() {
       </form>
 
       <form style={cardsStyle}>
-      <div class="card text-center">
-  <div class="card-header">
-    Featured
-  </div>
+      <div class="text-center">
+
   <div class="card-body">
     <div class="row">
   <div class="col-sm-4">
   <img src={flight1} alt="..." class="img-thumbnail"/>
     </div>
     <div class="col-sm-4">
-        <p>Testing</p>
+          <p>  2 Hour</p>
+        <p>Raipur __________  Durg</p>
+        
     </div>
     <div class="col-sm-4">
-        <p>Comming soon ..</p>
+        <p>Dekhne ka paisa nahi lagta</p>
+    <a href="#" class="btn btn-primary">Book Ticket</a>
+
     </div>
     </div>
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
-  <div class="card-footer text-muted">
-    2 days ago
-  </div>
+
 </div>
       </form>
       <form style={cardsStyle}>
-      <div class="card text-center">
-  <div class="card-header">
-    Featured
-  </div>
+      <div class="text-center">
+
   <div class="card-body">
     <div class="row">
   <div class="col-sm-4">
   <img src={flight2} alt="..." class="img-thumbnail"/>
     </div>
     <div class="col-sm-4">
-        <p>Testing</p>
+    <p>  2 Hour</p>
+        <p>Bilaspur __________  Delhi</p>
     </div>
     <div class="col-sm-4">
-        <p>Agla Dekh</p>
+        <p>Bank Account Check kar k aaya karo</p>
+    <a href="#" class="btn btn-primary">Book Ticket</a>
+
     </div>
     </div>
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
-  <div class="card-footer text-muted">
-    2 days ago
-  </div>
+
 </div>
       </form>
       <form style={cardsStyle}>
-      <div class="card text-center">
-  <div class="card-header">
-    Featured
-  </div>
+      <div class="text-center">
+
   <div class="card-body">
     <div class="row">
   <div class="col-sm-4">
   <img src={flight3} alt="..." class="img-thumbnail"/>
     </div>
     <div class="col-sm-4">
-        <p>Testing</p>
+    <p>  2 Hour</p>
+        <p>Swarg __________  Nark</p>
     </div>
     <div class="col-sm-4">
-        <p>Tumse Na ho paaye ka</p>
+        <p>Galat jagha aa gaye ho</p>
+    <a href="#" class="btn btn-primary">Book Ticket</a>
+
     </div>
     </div>
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
-  <div class="card-footer text-muted">
-    2 days ago
-  </div>
+
 </div>
       </form>
       <form style={cardsStyle}>
-      <div class="card text-center">
-  <div class="card-header">
-    Featured
-  </div>
+      <div class="text-center">
+
   <div class="card-body">
     <div class="row">
   <div class="col-sm-4">
   <img src={flight4} alt="..." class="img-thumbnail"/>
     </div>
     <div class="col-sm-4">
-        <p>Testing</p>
+    <p>  2 Hour</p>
+        <p>Narak __________  Swarg</p>
     </div>
     <div class="col-sm-4">
-        <p>Bahut Paisa</p>
+        <p>Agla Dekh</p>
+    <a href="#" class="btn btn-primary">Book Ticket</a>
+
     </div>
     </div>
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
-  <div class="card-footer text-muted">
-    2 days ago
-  </div>
+
 </div>
       </form>
       <form style={cardsStyle}>
-      <div class="card text-center">
-  <div class="card-header">
-    Featured
-  </div>
+      <div class="text-center">
+
   <div class="card-body">
     <div class="row">
   <div class="col-sm-4">
   <img src={flight5} alt="..." class="img-thumbnail"/>
     </div>
     <div class="col-sm-4">
-        <p>Testing</p>
+    <p>  2 Hour</p>
+        <p>Idhar  __________  Udhar</p>
     </div>
     <div class="col-sm-4">
-        <p>Paisa</p>
+        <p>Tumse Na ho Paaye ka</p>
+    <a href="#" class="btn btn-primary">Book Ticket</a>
+
     </div>
     </div>
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
-  <div class="card-footer text-muted">
-    2 days ago
-  </div>
+
 </div>
       </form>
 
