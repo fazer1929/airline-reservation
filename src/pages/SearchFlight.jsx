@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { Badge, NavDropdown, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import flight1 from "../images/flight1.png"
 import flight2 from "../images/flight2.png"
@@ -115,14 +116,42 @@ function SearchFlight() {
   <div class="card-body">
     <div class="row">
   <div class="col-sm-4">
+  <Badge bg="primary">Depart</Badge><br />
+  <br />
   <img src={flight1} alt="..." class="img-thumbnail"/>
+  <br />
+
+  <NavDropdown
+          id="nav-dropdown-dark-example"
+          title="Flight Detail "
+          menuVariant="dark"
+          ></NavDropdown>
     </div>
-    <div class="col-sm-4">
-          <p>  2 Hour</p>
-        <p>Raipur __________  Durg</p>
-        
+    <div class="col-sm-4" style={{margin:"auto"}}>
+
+        <Row xs={3}>
+
+          <div>
+
+          <p style={{fontWeight:"700",marginBottom:"2px"}}> DEL 22:55</p>
+          <p style={{color:"silver",marginBottom:"2px"}}>New Delhi</p>
+          </div>
+          <div>
+
+          <p style={{color:"silver",marginBottom:"2px"}}>02h 50m</p>
+          < hr style={{margin:"0"}}/>
+          <p style={{color:"silver",marginBottom:"2px"}}>Non Stop</p>
+          </div>
+  <div>
+
+          <p style={{fontWeight:"700",marginBottom:"2px"}}> 22:55 BLR</p>
+
+          <p style={{color:"silver",marginBottom:"2px"}}>Banglore</p>
+  </div>
+        </Row>
+
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4" style={{margin:"auto"}}>
         <p>Dekhne ka paisa nahi lagta</p>
     <a href="#" class="btn btn-primary">Book Ticket</a>
 
@@ -138,6 +167,8 @@ function SearchFlight() {
   <div class="card-body">
     <div class="row">
   <div class="col-sm-4">
+  <Badge bg="primary">Depart</Badge><br />
+  <br />
   <img src={flight2} alt="..." class="img-thumbnail"/>
     </div>
     <div class="col-sm-4">
@@ -160,6 +191,8 @@ function SearchFlight() {
   <div class="card-body">
     <div class="row">
   <div class="col-sm-4">
+  <Badge bg="primary">Depart</Badge><br />
+  <br />
   <img src={flight3} alt="..." class="img-thumbnail"/>
     </div>
     <div class="col-sm-4">
@@ -182,6 +215,8 @@ function SearchFlight() {
   <div class="card-body">
     <div class="row">
   <div class="col-sm-4">
+  <Badge bg="primary">Depart</Badge><br />
+  <br />
   <img src={flight4} alt="..." class="img-thumbnail"/>
     </div>
     <div class="col-sm-4">
@@ -204,6 +239,8 @@ function SearchFlight() {
   <div class="card-body">
     <div class="row">
   <div class="col-sm-4">
+  <Badge bg="primary">Depart</Badge><br />
+  <br />
   <img src={flight5} alt="..." class="img-thumbnail"/>
     </div>
     <div class="col-sm-4">
